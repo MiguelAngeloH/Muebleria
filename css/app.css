@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/*Globales */
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+.contenedor {
+  max-width: 1400px;
+  margin:0 auto ;
+}
+img{
+  max-width: 100%;
+  }
+
+
+/*Header y navegacion **/
+.nombre-sitio{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.nombre-sitio span{
+    color: #4361ee;
+}
+.contenedor-navegacion{
+  border-top: 1px solid #e1e1e1;
+}
+.nav-principal{
+  padding: 50px 0 ;
+  display: flex; 
+  justify-content: space-between;
+  height: 100px;
+
+}
+
+
+/*Box Model*/
+
+.sobre-nosotros{
+    background-color: red;
+    width: 200px;
+    padding: 25px;
+    box-sizing:border-box ;
+}
+.sobre-empresa {
+  background-color: blue;
+  width: 500px;
+  padding: 100px;
+
+}
+
+.hero{
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+/**Categorias**/
+.listado-categorias{
+  display: grid;
+  /**grid-template-columns: 200px 200px 200px 200px 200px;*/
+  /**grid-template-rows: 100px 100px 100px 100px;*/
+  /*grid-template-columns: repeat(4,150px);*/
+  /*grid-template-rows: repeat(4,95px);*/
+  /*grid-template-columns: 3fr 1fr;*/
+  /*grid-row: 1fr 1fr;*/
+  grid-template-columns: repeat(3,1fr);
+
+
+}
+
+
